@@ -1,13 +1,13 @@
 # Google Analyticsのテスト
 
 ## ディレクトリ構成
-* requirements.yaml
+### requirements.yaml
 conda の環境ファイル
 
-* lib/get\_print.py
+### lib/get\_print.py
 Google Analyticsからデータを取り込み、標準出力に出力する
 
-* lib/calc.py
+### lib/calc.py
 KMeans + 遺伝的アルゴリズムでクラスタリングを行なう
 
 lib/get\_print.py 出力を output/views.csv に出力していることを前提とする
