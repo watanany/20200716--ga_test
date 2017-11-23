@@ -1,0 +1,5 @@
+/.python-version
+/config/**/*
+/output/**/*
+!config/**/.keep
+!output/**/.keep
