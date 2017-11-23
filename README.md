@@ -9,8 +9,7 @@ lib/get\_print.py
 
 lib/calc.py
   : KMeans + 遺伝的アルゴリズムでクラスタリングを行なう
-
-:lib/get\_print.py 出力を output/views.csv に出力していることを前提とする
+    lib/get\_print.py 出力を output/views.csv に出力していることを前提とする
 
 ## 参考URL
 * [レポートツール - アナリティクス ヘルプ](https://support.google.com/analytics/topic/6175347?hl=ja&ref_topic=1727148 "レポートツール - アナリティクス ヘルプ")
