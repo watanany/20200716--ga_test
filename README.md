@@ -6,7 +6,7 @@
   <dd>conda の環境ファイル</dd>
 
   <dt>lib/get_print.py</dt>
-  <dl>Google Analyticsからデータを取り込み、標準出力に出力する</dl>
+  <dd>Google Analyticsからデータを取り込み、標準出力に出力する</dd>
 
   <dt>lib/calc.py</dt>
   <dd>
