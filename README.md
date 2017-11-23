@@ -1,15 +1,19 @@
 # Google Analyticsのテスト
 
 ## ディレクトリ構成
-requirements.yaml
-  : conda の環境ファイル
+<dl>
+  <dt>requirements.yaml</dt>
+  <dd>conda の環境ファイル</dd>
 
-lib/get\_print.py
-  : Google Analyticsからデータを取り込み、標準出力に出力する
+  <dt>lib/get\_print.py</dt>
+  <dl>Google Analyticsからデータを取り込み、標準出力に出力する</dl>
 
-lib/calc.py
-  : KMeans + 遺伝的アルゴリズムでクラスタリングを行なう
+  <dt>lib/calc.py</dt>
+  <dd>
+    KMeans + 遺伝的アルゴリズムでクラスタリングを行なう<br>
     lib/get\_print.py 出力を output/views.csv に出力していることを前提とする
+  </dd>
+</dl>
 
 ## 参考URL
 * [レポートツール - アナリティクス ヘルプ](https://support.google.com/analytics/topic/6175347?hl=ja&ref_topic=1727148 "レポートツール - アナリティクス ヘルプ")
