@@ -5,7 +5,7 @@
   <dt>requirements.yaml</dt>
   <dd>conda の環境ファイル</dd>
 
-  <dt>lib/get\_print.py</dt>
+  <dt>lib/get_print.py</dt>
   <dl>Google Analyticsからデータを取り込み、標準出力に出力する</dl>
 
   <dt>lib/calc.py</dt>
