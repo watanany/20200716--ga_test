@@ -1,5 +1,12 @@
 # Google Analyticsのテスト
 
+## セットアップ
+
+```
+$ conda env create -n ga_test
+$ source activate ga_test
+```
+
 ## ディレクトリ構成
 <dl>
   <dt>requirements.yaml</dt>
@@ -11,7 +18,7 @@
   <dt>lib/calc.py</dt>
   <dd>
     KMeans + 遺伝的アルゴリズムでクラスタリングを行なう<br>
-    lib/get\_print.py 出力を output/views.csv に出力していることを前提とする
+    lib/get_print.py 出力を output/views.csv に出力していることを前提とする
   </dd>
 </dl>
 
