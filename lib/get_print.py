@@ -71,13 +71,11 @@ def get_report(analytics, page_token=None):
 
 def get_reports(analytics):
     page_token = None
-    res = []
     while page_token != -1:
         response = get_report(analytics, page_token)
         report = response['reports'][0]
-        res.append(report)
         page_token = report.get('nextPageToken', -1)
-    return res
+        yield report
 
 def convert(report):
     """Convert Google Analytics Report to 2D Array
