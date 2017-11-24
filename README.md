@@ -7,6 +7,18 @@ $ conda env create -n ga_test
 $ source activate ga_test
 ```
 
+### pyenv + virtualenv + miniconda3-latestの場合
+
+```
+$ pyenv install miniconda3-latest
+$ pyenv local miniconda3-latest
+$ conda env create -n ga_test
+
+$ source $PYENV_ROOT/versions/miniconda3-latest/bin/activate ga_test
+または
+$ source $PYENV_VIRTUAL_ENV/bin/activate ga_test
+```
+
 ## ディレクトリ構成
 <dl>
   <dt>environment.yaml</dt>
