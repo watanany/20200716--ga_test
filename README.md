@@ -1,14 +1,11 @@
 # Google Analyticsのテスト
-
 ## セットアップ
-
 ```
 $ conda env create -n ga_test
 $ source activate ga_test
 ```
 
 ### pyenv + virtualenv + miniconda3-latestの場合
-
 ```
 $ pyenv install miniconda3-latest
 $ pyenv local miniconda3-latest
@@ -17,6 +14,17 @@ $ conda env create -n ga_test
 $ source $PYENV_ROOT/versions/miniconda3-latest/bin/activate ga_test
 または
 $ source $PYENV_VIRTUAL_ENV/bin/activate ga_test
+```
+
+## 実行方法
+### Google Analyticsからデータをダウンロード
+```
+$ python lib/get_print.py > output/views.csv
+```
+
+### KMeans + 遺伝的アルゴリズムでクラスタリング
+```
+$ python lib/calc.py
 ```
 
 ## ディレクトリ構成
