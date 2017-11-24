@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import argparse
+import os
 import csv
 from io import StringIO
 from functools import reduce
@@ -15,7 +16,7 @@ from apiclient.discovery import build
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
 CLIENT_SECRETS_PATH = './config/client_secrets.json'
-VIEW_ID = '130571540'
+VIEW_ID = os.getenv('VIEW_ID')
 DIMENSIONS = ['ga:userBucket', 'ga:pageTitle']
 METRICS = ['ga:pageViews']
 ORDER_BYS = ['ga:userBucket']

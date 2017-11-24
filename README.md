@@ -1,5 +1,6 @@
 # Google Analyticsのテスト
 ## セットアップ
+### miniconda3の場合
 ```
 $ conda env create -n ga_test
 $ source activate ga_test
@@ -16,11 +17,17 @@ $ source $PYENV_ROOT/versions/miniconda3-latest/bin/activate ga_test
 $ source $PYENV_VIRTUAL_ENV/bin/activate ga_test
 ```
 
+### 認証情報とView IDの取得
+認証情報(`config/client_secrets.json`)とView IDは、
+[はじめてのアナリティクス Reporting API v4: インストール済みアプリケーション向け Python クイックスタート  |  アナリティクス Reporting API v4  |  Google Developers](https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/installed-py "はじめてのアナリティクス Reporting API v4: インストール済みアプリケーション向け Python クイックスタート  |  アナリティクス Reporting API v4  |  Google Developers")を参考にダウンロード及び取得してください。
+
 ## 実行方法
 ### Google Analyticsからデータをダウンロード
 ```
-$ python lib/get_print.py > output/views.csv
+$ VIEW_ID=<Googleから取得したView ID> python lib/get_print.py > output/views.csv
 ```
+
+なお、初回起動時にGoogleから認可情報取得のために、ブラウザが立ち上がります。
 
 ### KMeans + 遺伝的アルゴリズムでクラスタリング
 ```
