@@ -6,6 +6,7 @@ from io import StringIO
 from functools import reduce
 from operator import add
 from httplib2 import Http
+from toolz import compose
 from oauth2client import client
 from oauth2client import file
 from oauth2client import tools
@@ -92,7 +93,7 @@ def convert(report):
 
 def main():
     analytics = initialize_analyticsreporting()
-    M = [*reduce(add, [convert(report) for report in get_reports(analytics)])]
+    M = compose(list, reduce)(add, [convert(report) for report in get_reports(analytics)])
 
     csv_io = StringIO(newline='')
     w = csv.writer(csv_io, quoting=csv.QUOTE_ALL)
