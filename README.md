@@ -24,6 +24,12 @@ $ source $PYENV_VIRTUAL_ENV/bin/activate ga_test
   <dt>environment.yaml</dt>
   <dd>conda の環境ファイル</dd>
 
+  <dt>config/client_secrets.json</dt>
+  <dd>
+    <a href="https://console.cloud.google.com/apis/credentials">API とサービス</a>からダウンロードした認証情報ファイル<br>
+    認証情報なので、.gitignoreされている
+  </dd>
+
   <dt>lib/get_print.py</dt>
   <dd>Google Analyticsからデータを取り込み、標準出力に出力する</dd>
 
