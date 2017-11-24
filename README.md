@@ -29,7 +29,7 @@ $ python lib/calc.py
 
 ## ディレクトリ構成
 <dl>
-  <dt>environment.yaml</dt>
+  <dt>environment.yml</dt>
   <dd>conda の環境ファイル</dd>
 
   <dt>config/client_secrets.json</dt>
