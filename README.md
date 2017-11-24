@@ -9,7 +9,7 @@ $ source activate ga_test
 
 ## ディレクトリ構成
 <dl>
-  <dt>requirements.yaml</dt>
+  <dt>environment.yaml</dt>
   <dd>conda の環境ファイル</dd>
 
   <dt>lib/get_print.py</dt>
